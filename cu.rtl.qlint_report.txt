@@ -1,0 +1,172 @@
+====================================================================================================
+Lint Check Report
+Questa Lint  Version 2022.4_1 5450673 linux_x86_64 22-Nov-2022
+
+Timestamp            : Sat Jul 27 22:26:45 2024
+Description          : Report for referring checks count, check violations details, and  design information
+Design               : cu
+Database             : /study/2023/521404A/agoodarz23/DT2_2023/project/workdir/output/qlint/lint.db
+Design Quality Score : 99.9%
+
+Sections:
+   Section 1 : Check Summary
+   Section 2 : Check Details
+   Section 3 : Design Information
+====================================================================================================
+
+
+====================================================================================================
+Section 1 : Check Summary
+====================================================================================================
+-------------
+| Error (0) |
+-------------
+
+---------------
+| Warning (1) |
+---------------
+  concurrent_block_with_duplicate_assign  : 1
+
+-------------
+| Info (30) |
+-------------
+  combo_path_input_to_output              : 10
+  line_char_large                         : 3
+  module_output_not_registered            : 10
+  reserved_keyword                        : 5
+  always_exceeds_line_limit               : 1
+  always_signal_assign_large              : 1
+
+----------------
+| Resolved (0) |
+----------------
+
+
+====================================================================================================
+Section 2 : Check Details
+====================================================================================================
+-------------
+| Error (0) |
+-------------
+
+
+---------------
+| Warning (1) |
+---------------
+
+Check: concurrent_block_with_duplicate_assign [Category: Rtl Design Style] (1)
+       [Message: Signal is assigned in multiple concurrent statements. Signal '<signal>', Module '<module>', File '<file>', Total Assigns Count '<count>', First Assign at Line '<line1>', Second Assign at Line '<line2>'.]
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+concurrent_block_with_duplicate_assign: [uninspected] Signal is assigned in multiple concurrent statements. Signal 'il_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Total Assigns Count '2', First Assign at Line '42', Second Assign at Line '44'. [Example Hierarchy:cu]
+
+
+
+-------------
+| Info (30) |
+-------------
+
+Check: combo_path_input_to_output [Category: Connectivity] (10)
+       [Message: Top level input to output has pure combinational path. Input port(s) '<input>', Output port '<output>', Module '<module>', File '<file>', Line '<line>']
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+combo_path_input_to_output: [uninspected] Top level input to output has pure combinational path. Input port(s) 'ins_in', Output port 'il_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '12' [Example Hierarchy:cu]
+
+combo_path_input_to_output: [uninspected] Top level input to output has pure combinational path. Input port(s) 'ins_in, n_in and z_in', Output port 'ps_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '13' [Example Hierarchy:cu]
+
+combo_path_input_to_output: [uninspected] Top level input to output has pure combinational path. Input port(s) 'ins_in', Output port 'rw_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '14' [Example Hierarchy:cu]
+
+combo_path_input_to_output: [uninspected] Top level input to output has pure combinational path. Input port(s) 'ins_in', Output port 'rs_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '15' [Example Hierarchy:cu]
+
+combo_path_input_to_output: [uninspected] Top level input to output has pure combinational path. Input port(s) 'ins_in', Output port 'mm_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '16' [Example Hierarchy:cu]
+
+combo_path_input_to_output: [uninspected] Top level input to output has pure combinational path. Input port(s) 'ins_in', Output port 'md_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '17' [Example Hierarchy:cu]
+
+combo_path_input_to_output: [uninspected] Top level input to output has pure combinational path. Input port(s) 'ins_in', Output port 'mb_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '18' [Example Hierarchy:cu]
+
+combo_path_input_to_output: [uninspected] Top level input to output has pure combinational path. Input port(s) 'ins_in', Output port 'fs_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '19' [Example Hierarchy:cu]
+
+combo_path_input_to_output: [uninspected] Top level input to output has pure combinational path. Input port(s) 'ins_in', Output port 'wen_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '20' [Example Hierarchy:cu]
+
+combo_path_input_to_output: [uninspected] Top level input to output has pure combinational path. Input port(s) 'ins_in', Output port 'iom_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '21' [Example Hierarchy:cu]
+
+
+Check: line_char_large [Category: Rtl Design Style] (3)
+       [Message: Line has more characters than the specified limit. Current count '<count>', Specified Limit '<limit>', Tab equivalent spacing '<tab_size>', File '<file>', Line '<line>'.]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+line_char_large: [uninspected] Line has more characters than the specified limit. Current count '112', Specified Limit '110', Tab equivalent spacing '2', File '/study/2023/521404A/agoodarz23/DT2_2023/project/input/cu.sv', Line '29'. [RTL ID:710ae5e2_00200]
+
+line_char_large: [uninspected] Line has more characters than the specified limit. Current count '156', Specified Limit '110', Tab equivalent spacing '2', File '/study/2023/521404A/agoodarz23/DT2_2023/project/input/mycpu.svh', Line '12'. [RTL ID:8628e0cc_00200]
+
+line_char_large: [uninspected] Line has more characters than the specified limit. Current count '142', Specified Limit '110', Tab equivalent spacing '2', File '/study/2023/521404A/agoodarz23/DT2_2023/project/input/mycpu.svh', Line '15'. [RTL ID:81aca787_00200]
+
+
+Check: module_output_not_registered [Category: Connectivity] (10)
+       [Message: Module output port is not registered. Port '<port>', Module '<module>', File '<file>', Line '<line>'.]
+------------------------------------------------------------------------------------------------------------------------
+module_output_not_registered: [uninspected] Module output port is not registered. Port 'il_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '12'. [Example Hierarchy:cu]
+
+module_output_not_registered: [uninspected] Module output port is not registered. Port 'ps_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '13'. [Example Hierarchy:cu]
+
+module_output_not_registered: [uninspected] Module output port is not registered. Port 'rw_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '14'. [Example Hierarchy:cu]
+
+module_output_not_registered: [uninspected] Module output port is not registered. Port 'rs_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '15'. [Example Hierarchy:cu]
+
+module_output_not_registered: [uninspected] Module output port is not registered. Port 'mm_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '16'. [Example Hierarchy:cu]
+
+module_output_not_registered: [uninspected] Module output port is not registered. Port 'md_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '17'. [Example Hierarchy:cu]
+
+module_output_not_registered: [uninspected] Module output port is not registered. Port 'mb_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '18'. [Example Hierarchy:cu]
+
+module_output_not_registered: [uninspected] Module output port is not registered. Port 'fs_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '19'. [Example Hierarchy:cu]
+
+module_output_not_registered: [uninspected] Module output port is not registered. Port 'wen_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '20'. [Example Hierarchy:cu]
+
+module_output_not_registered: [uninspected] Module output port is not registered. Port 'iom_out', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '21'. [Example Hierarchy:cu]
+
+
+Check: reserved_keyword [Category: Nomenclature Style] (5)
+       [Message: Name of the design element matches a reserved keyword. Name '<name>', Reason '<reason>', Module '<module>', File '<file>', Line '<line>'.]
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+reserved_keyword: [uninspected] Name of the design element matches a reserved keyword. Name 'FOR', Reason 'Case variant of verilog keyword', Module 'mycpu_pkg', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/mycpu_pkg.sv', Line '38'.
+
+reserved_keyword: [uninspected] Name of the design element matches a reserved keyword. Name 'AND', Reason 'Case variant of verilog keyword', Module 'mycpu_pkg', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/mycpu_pkg.sv', Line '58'.
+
+reserved_keyword: [uninspected] Name of the design element matches a reserved keyword. Name 'OR', Reason 'Case variant of verilog keyword', Module 'mycpu_pkg', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/mycpu_pkg.sv', Line '59'.
+
+reserved_keyword: [uninspected] Name of the design element matches a reserved keyword. Name 'XOR', Reason 'Case variant of verilog keyword', Module 'mycpu_pkg', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/mycpu_pkg.sv', Line '60'.
+
+reserved_keyword: [uninspected] Name of the design element matches a reserved keyword. Name 'NOT', Reason 'Case variant of verilog keyword', Module 'mycpu_pkg', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/mycpu_pkg.sv', Line '61'.
+
+
+Check: always_exceeds_line_limit [Category: Rtl Design Style] (1)
+       [Message: Always block has more lines than the specified limit. Total count '<count>', Specified limit '<limit>', Module '<module>', File '<file>', Line '<line>'.]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+always_exceeds_line_limit: [uninspected] Always block has more lines than the specified limit. Total count '457', Specified limit '300', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '39'. [Example Hierarchy:cu]
+
+
+Check: always_signal_assign_large [Category: Rtl Design Style] (1)
+       [Message: Always block has more signal assignments than the specified limit. Total count '<count>', Specified limit '<limit>', Module '<module>', File '<file>', Line '<line>'.]
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+always_signal_assign_large: [uninspected] Always block has more signal assignments than the specified limit. Total count '11', Specified limit '5', Module 'cu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/cu.sv', Line '39'. [Example Hierarchy:cu]
+
+
+
+----------------
+| Resolved (0) |
+----------------
+
+
+
+====================================================================================================
+Section 3 : Design Information
+====================================================================================================
+-----------
+| Summary |
+-----------
+  Register Bits                           : 7
+  Latch Bits                              : 0
+  User-specified Blackboxes               : 0
+  Inferred Blackboxes                     : 0
+  Empty Modules                           : 0
+  Unresolved Modules                      : 0
+  Hierarchical IPs                        : 0
+

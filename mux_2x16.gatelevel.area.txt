@@ -1,0 +1,37 @@
+ 
+****************************************
+Report : area
+Design : mux_2x16
+Version: T-2022.03-SP5-1
+Date   : Sun Jul 14 20:35:01 2024
+****************************************
+
+Library(s) Used:
+
+    saed32hvt_tt1p05v25c (File: /research/cas/public/DT2_2023/lib/logic_lib/saed32hvt_tt1p05v25c.db)
+
+Number of ports:                           49
+Number of nets:                            50
+Number of cells:                           17
+Number of combinational cells:             17
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       2
+
+Combinational area:                 42.187904
+Buf/Inv area:                        1.524864
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:               9.317227
+
+Total cell area:                    42.187904
+Total area:                         51.505132
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Total synthetic cell area:              0.0000  0.0%  
+
+1

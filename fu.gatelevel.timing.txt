@@ -1,0 +1,95 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fu
+Version: T-2022.03-SP5-1
+Date   : Sun Jul 14 20:55:20 2024
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32hvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: a_in[1] (input port)
+  Endpoint: z_out (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fu                 8000                  saed32hvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  a_in[1] (in)                             0.00       0.00 f
+  U352/Y (INVX0_HVT)                       0.05       0.05 r
+  U354/Y (AO22X1_HVT)                      0.12       0.17 r
+  U193/Y (NAND2X0_HVT)                     0.07       0.24 f
+  U178/Y (NBUFFX2_HVT)                     0.08       0.32 f
+  U360/Y (OAI22X1_HVT)                     0.11       0.44 r
+  U361/Y (AO221X1_HVT)                     0.09       0.52 r
+  U174/Y (NAND2X1_HVT)                     0.12       0.64 f
+  U188/Y (OAI21X1_HVT)                     0.11       0.75 r
+  U330/CO (FADDX1_HVT)                     0.14       0.89 r
+  U442/Y (NAND2X0_HVT)                     0.07       0.96 f
+  U444/Y (NAND3X0_HVT)                     0.06       1.02 r
+  U329/Y (AND2X1_HVT)                      0.08       1.10 r
+  U173/Y (OR3X1_HVT)                       0.10       1.20 r
+  U446/Y (AND2X1_HVT)                      0.08       1.28 r
+  U448/Y (OR3X1_HVT)                       0.09       1.37 r
+  U449/Y (NAND2X0_HVT)                     0.06       1.43 f
+  U451/Y (NAND3X0_HVT)                     0.05       1.48 r
+  U453/Y (AO22X1_HVT)                      0.09       1.58 r
+  U181/Y (AO22X1_HVT)                      0.10       1.67 r
+  U455/Y (AO22X1_HVT)                      0.10       1.77 r
+  U457/Y (NAND2X0_HVT)                     0.06       1.83 f
+  U172/Y (NAND3X1_HVT)                     0.11       1.94 r
+  U460/Y (NAND2X0_HVT)                     0.05       2.00 f
+  U462/Y (AND3X1_HVT)                      0.09       2.08 f
+  U171/Y (OAI22X1_HVT)                     0.09       2.17 r
+  U463/Y (NAND2X0_HVT)                     0.06       2.23 f
+  U466/Y (NAND3X0_HVT)                     0.06       2.29 r
+  U516/Y (NAND2X0_HVT)                     0.07       2.36 f
+  U518/Y (NAND3X0_HVT)                     0.06       2.42 r
+  intadd_0/U15/CO (FADDX1_HVT)             0.14       2.55 r
+  intadd_0/U14/CO (FADDX1_HVT)             0.14       2.69 r
+  intadd_0/U13/CO (FADDX1_HVT)             0.14       2.83 r
+  U470/Y (AO22X1_HVT)                      0.10       2.93 r
+  U514/Y (AO22X1_HVT)                      0.09       3.03 r
+  intadd_0/U10/CO (FADDX1_HVT)             0.14       3.17 r
+  U512/Y (AO22X1_HVT)                      0.10       3.26 r
+  intadd_0/U8/CO (FADDX1_HVT)              0.14       3.40 r
+  U411/Y (AO22X1_HVT)                      0.10       3.50 r
+  U413/Y (AO22X1_HVT)                      0.10       3.60 r
+  U415/Y (NAND2X0_HVT)                     0.06       3.66 f
+  U418/Y (NAND3X0_HVT)                     0.06       3.72 r
+  U520/Y (NAND2X0_HVT)                     0.07       3.79 f
+  U522/Y (NAND3X0_HVT)                     0.06       3.85 r
+  intadd_0/U3/CO (FADDX1_HVT)              0.14       3.99 r
+  U186/Y (XOR3X2_HVT)                      0.12       4.11 f
+  U485/Y (NOR4X0_HVT)                      0.12       4.23 r
+  U488/Y (AND3X1_HVT)                      0.08       4.31 r
+  U189/Y (OAI221X2_HVT)                    0.16       4.48 f
+  U229/Y (OR3X1_HVT)                       0.11       4.59 f
+  U504/Y (AND3X1_HVT)                      0.07       4.65 f
+  U510/Y (NAND4X0_HVT)                     0.05       4.70 r
+  U253/Y (OR4X1_HVT)                       0.13       4.83 r
+  U678/Y (NOR4X0_HVT)                      0.10       4.93 f
+  U182/Y (AND2X1_HVT)                      0.05       4.98 f
+  z_out (out)                              0.00       4.98 f
+  data arrival time                                   4.98
+
+  max_delay                                5.00       5.00
+  output external delay                    0.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -4.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+1

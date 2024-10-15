@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : reference
+Design : mux_2x16
+Version: T-2022.03-SP5-1
+Date   : Sun Jul 14 20:35:01 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AO22X1_HVT         saed32hvt_tt1p05v25c
+                                  2.541440      16     40.663040  
+INVX2_HVT          saed32hvt_tt1p05v25c
+                                  1.524864       1      1.524864  
+-----------------------------------------------------------------------------
+Total 2 references                                     42.187904
+1

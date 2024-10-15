@@ -1,0 +1,135 @@
+====================================================================================================
+Lint Check Report
+Questa Lint  Version 2022.4_1 5450673 linux_x86_64 22-Nov-2022
+
+Timestamp            : Sun Jul 14 20:53:51 2024
+Description          : Report for referring checks count, check violations details, and  design information
+Design               : fu
+Database             : /study/2023/521404A/agoodarz23/DT2_2023/project/workdir/output/qlint/lint.db
+Design Quality Score : 99.9%
+
+Sections:
+   Section 1 : Check Summary
+   Section 2 : Check Details
+   Section 3 : Design Information
+====================================================================================================
+
+
+====================================================================================================
+Section 1 : Check Summary
+====================================================================================================
+-------------
+| Error (0) |
+-------------
+
+---------------
+| Warning (1) |
+---------------
+  latch_inferred                          : 1
+
+-------------
+| Info (14) |
+-------------
+  combo_path_input_to_output              : 3
+  line_char_large                         : 2
+  module_output_not_registered            : 3
+  multiplication_operator                 : 1
+  reserved_keyword                        : 5
+
+----------------
+| Resolved (0) |
+----------------
+
+
+====================================================================================================
+Section 2 : Check Details
+====================================================================================================
+-------------
+| Error (0) |
+-------------
+
+
+---------------
+| Warning (1) |
+---------------
+
+Check: latch_inferred [Category: Rtl Design Style] (1)
+       [Message: Latch inferred. Signal '<signal>', Module '<module>', File '<file>', Line '<line>'.]
+------------------------------------------------------------------------------------------------------
+latch_inferred: [uninspected] Latch inferred. Signal 'm', Module 'fu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/fu.sv', Line '15'. [Example Hierarchy:fu]
+
+
+
+-------------
+| Info (14) |
+-------------
+
+Check: combo_path_input_to_output [Category: Connectivity] (3)
+       [Message: Top level input to output has pure combinational path. Input port(s) '<input>', Output port '<output>', Module '<module>', File '<file>', Line '<line>']
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+combo_path_input_to_output: [uninspected] Top level input to output has pure combinational path. Input port(s) 'a_in, b_in and fs_in', Output port 'f_out', Module 'fu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/fu.sv', Line '10' [Example Hierarchy:fu]
+
+combo_path_input_to_output: [uninspected] Top level input to output has pure combinational path. Input port(s) 'a_in, b_in and fs_in', Output port 'z_out', Module 'fu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/fu.sv', Line '11' [Example Hierarchy:fu]
+
+combo_path_input_to_output: [uninspected] Top level input to output has pure combinational path. Input port(s) 'a_in, b_in and fs_in', Output port 'n_out', Module 'fu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/fu.sv', Line '12' [Example Hierarchy:fu]
+
+
+Check: line_char_large [Category: Rtl Design Style] (2)
+       [Message: Line has more characters than the specified limit. Current count '<count>', Specified Limit '<limit>', Tab equivalent spacing '<tab_size>', File '<file>', Line '<line>'.]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+line_char_large: [uninspected] Line has more characters than the specified limit. Current count '156', Specified Limit '110', Tab equivalent spacing '2', File '/study/2023/521404A/agoodarz23/DT2_2023/project/input/mycpu.svh', Line '12'. [RTL ID:8628e0cc_00200]
+
+line_char_large: [uninspected] Line has more characters than the specified limit. Current count '142', Specified Limit '110', Tab equivalent spacing '2', File '/study/2023/521404A/agoodarz23/DT2_2023/project/input/mycpu.svh', Line '15'. [RTL ID:81aca787_00200]
+
+
+Check: module_output_not_registered [Category: Connectivity] (3)
+       [Message: Module output port is not registered. Port '<port>', Module '<module>', File '<file>', Line '<line>'.]
+------------------------------------------------------------------------------------------------------------------------
+module_output_not_registered: [uninspected] Module output port is not registered. Port 'f_out', Module 'fu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/fu.sv', Line '10'. [Example Hierarchy:fu]
+
+module_output_not_registered: [uninspected] Module output port is not registered. Port 'z_out', Module 'fu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/fu.sv', Line '11'. [Example Hierarchy:fu]
+
+module_output_not_registered: [uninspected] Module output port is not registered. Port 'n_out', Module 'fu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/fu.sv', Line '12'. [Example Hierarchy:fu]
+
+
+Check: multiplication_operator [Category: Rtl Design Style] (1)
+       [Message: Expression has a multiplication operator. Module '<module>', File '<file>', Line '<line>'.]
+-------------------------------------------------------------------------------------------------------------
+multiplication_operator: [uninspected] Expression has a multiplication operator. Module 'fu', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/fu.sv', Line '27'. [RTL ID:5a2acbbe_00200] [Example Hierarchy:fu]
+
+
+Check: reserved_keyword [Category: Nomenclature Style] (5)
+       [Message: Name of the design element matches a reserved keyword. Name '<name>', Reason '<reason>', Module '<module>', File '<file>', Line '<line>'.]
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+reserved_keyword: [uninspected] Name of the design element matches a reserved keyword. Name 'FOR', Reason 'Case variant of verilog keyword', Module 'mycpu_pkg', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/mycpu_pkg.sv', Line '35'.
+
+reserved_keyword: [uninspected] Name of the design element matches a reserved keyword. Name 'AND', Reason 'Case variant of verilog keyword', Module 'mycpu_pkg', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/mycpu_pkg.sv', Line '55'.
+
+reserved_keyword: [uninspected] Name of the design element matches a reserved keyword. Name 'OR', Reason 'Case variant of verilog keyword', Module 'mycpu_pkg', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/mycpu_pkg.sv', Line '56'.
+
+reserved_keyword: [uninspected] Name of the design element matches a reserved keyword. Name 'XOR', Reason 'Case variant of verilog keyword', Module 'mycpu_pkg', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/mycpu_pkg.sv', Line '57'.
+
+reserved_keyword: [uninspected] Name of the design element matches a reserved keyword. Name 'NOT', Reason 'Case variant of verilog keyword', Module 'mycpu_pkg', File '/homedir01/agoodarz23/DT2_2023/project/workdir/input/mycpu_pkg.sv', Line '58'.
+
+
+
+----------------
+| Resolved (0) |
+----------------
+
+
+
+====================================================================================================
+Section 3 : Design Information
+====================================================================================================
+-----------
+| Summary |
+-----------
+  Register Bits                           : 0
+  Latch Bits                              : 32
+  User-specified Blackboxes               : 0
+  Inferred Blackboxes                     : 0
+  Empty Modules                           : 0
+  Unresolved Modules                      : 0
+  Hierarchical IPs                        : 0
+

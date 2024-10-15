@@ -1,0 +1,31 @@
+****************************************
+Report : qor
+        -summary
+Design : mycpu
+Version: U-2022.12
+Date   : Sun Jul 28 00:57:09 2024
+****************************************
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+NormalMode.FastCorner
+                   (Setup)             2.76           0.00              0
+NormalMode.SlowCorner
+                   (Setup)            -0.02          -0.07              5
+Design             (Setup)            -0.02          -0.07              5
+
+NormalMode.FastCorner
+                   (Hold)              0.11           0.00              0
+NormalMode.SlowCorner
+                   (Hold)              0.00           0.00              0
+Design             (Hold)              0.00           0.00              0
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                           7743.26
+Cell Area (netlist and physical only):        10201.34
+Nets with DRC Violations:        0
+1

@@ -1,0 +1,93 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mycpu
+Version: T-2022.03-SP5-1
+Date   : Tue Jul 30 22:29:56 2024
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32hvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: IR/ir_r_reg[15]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: PC/pc_r_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mycpu              8000                  saed32hvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  IR/ir_r_reg[15]/CLK (DFFARX1_HVT)        0.00       0.00 r
+  IR/ir_r_reg[15]/Q (DFFARX1_HVT)          0.19       0.19 r
+  U1566/Y (OR2X1_HVT)                      0.09       0.28 r
+  U1567/Y (NOR2X0_HVT)                     0.09       0.37 f
+  U1573/Y (AND2X1_HVT)                     0.06       0.44 f
+  U1574/Y (NOR2X0_HVT)                     0.08       0.52 r
+  U1578/Y (AND3X1_HVT)                     0.09       0.61 r
+  U1384/Y (AND2X1_HVT)                     0.07       0.68 r
+  U1381/Y (AND3X1_HVT)                     0.09       0.77 r
+  U1412/Y (AO22X1_HVT)                     0.10       0.86 r
+  U1300/Y (OA21X1_HVT)                     0.12       0.98 r
+  U1431/Y (OR3X1_HVT)                      0.10       1.08 r
+  U1047/Y (INVX0_HVT)                      0.10       1.18 f
+  U1749/Y (AOI22X1_HVT)                    0.14       1.32 r
+  U1752/Y (NAND3X0_HVT)                    0.07       1.39 f
+  U836/Y (OR2X1_HVT)                       0.12       1.51 f
+  U1756/Y (XNOR2X2_HVT)                    0.22       1.72 r
+  U888/Y (NAND2X4_HVT)                     0.17       1.89 f
+  U2119/Y (OAI22X1_HVT)                    0.13       2.02 r
+  U2128/CO (FADDX1_HVT)                    0.16       2.18 r
+  U2130/Y (OR2X1_HVT)                      0.08       2.27 r
+  U2132/Y (AO22X1_HVT)                     0.08       2.35 r
+  U2134/S (FADDX1_HVT)                     0.19       2.54 f
+  U2147/S (FADDX1_HVT)                     0.18       2.72 r
+  U884/Y (XOR2X2_HVT)                      0.14       2.86 f
+  U2236/Y (NOR2X0_HVT)                     0.08       2.95 r
+  U854/Y (OAI21X2_HVT)                     0.12       3.06 f
+  U2255/Y (AO21X1_HVT)                     0.07       3.13 f
+  U2266/Y (AO21X1_HVT)                     0.07       3.20 f
+  U2267/Y (AO21X1_HVT)                     0.06       3.26 f
+  U896/Y (NAND2X4_HVT)                     0.10       3.36 r
+  U1373/Y (AND2X1_HVT)                     0.09       3.45 r
+  U2564/Y (NAND4X0_HVT)                    0.10       3.55 f
+  U2565/Y (NOR2X0_HVT)                     0.10       3.66 r
+  U1416/Y (AND2X1_HVT)                     0.07       3.73 r
+  U1407/Y (AND2X1_HVT)                     0.06       3.79 r
+  U1406/Y (NAND4X0_HVT)                    0.09       3.88 f
+  U1388/Y (NAND3X0_HVT)                    0.07       3.95 r
+  U1432/Y (NAND3X0_HVT)                    0.09       4.03 f
+  U895/Y (OR2X2_HVT)                       0.09       4.12 f
+  U897/Y (INVX0_HVT)                       0.06       4.19 r
+  U1093/Y (NOR2X0_HVT)                     0.11       4.30 f
+  U2684/Y (NOR2X0_HVT)                     0.09       4.38 r
+  U907/Y (NAND2X0_HVT)                     0.10       4.48 f
+  U2725/Y (NOR2X0_HVT)                     0.10       4.58 r
+  U2727/Y (AOI21X1_HVT)                    0.12       4.70 f
+  U2729/Y (XOR2X1_HVT)                     0.12       4.82 r
+  U2731/Y (AO21X1_HVT)                     0.10       4.91 r
+  PC/pc_r_reg[13]/D (DFFARX1_HVT)          0.01       4.93 r
+  data arrival time                                   4.93
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  PC/pc_r_reg[13]/CLK (DFFARX1_HVT)        0.00       5.00 r
+  library setup time                      -0.07       4.93
+  data required time                                  4.93
+  -----------------------------------------------------------
+  data required time                                  4.93
+  data arrival time                                  -4.93
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
